@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Dial *888#</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Layanan Dial *888#</h1>
+        <div id="menu">
+            <h2>Menu Awal</h2>
+            <ol>
+                <li><button onclick="showTransfer()">Transfer Pulsa</button></li>
+                <li><button onclick="alert('Fitur ini belum tersedia.')">Minta Pulsa</button></li>
+                <li><button onclick="alert('Fitur ini belum tersedia.')">Auto TP</button></li>
+                <li><button onclick="alert('Fitur ini belum tersedia.')">Delete Auto TP</button></li>
+                <li><button onclick="alert('Fitur ini belum tersedia.')">List Auto TP</button></li>
+                <li><button onclick="alert('Fitur ini belum tersedia.')">Cek Kupon Undian TP</button></li>
+            </ol>
+        </div>
+
+        <div id="transferSection" class="hidden">
+            <h2>Transfer Pulsa</h2>
+            <label for="phoneNumber">Nomor Tujuan:</label>
+            <input type="text" id="phoneNumber" placeholder="Masukkan nomor tujuan" />
+            <button onclick="executeTransfer()">Kirim</button>
+            <div id="transferResult" class="hidden"></div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
